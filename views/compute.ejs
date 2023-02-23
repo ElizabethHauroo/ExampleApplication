@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href="/math/add">add</a>
+    <a href="/math/divide">divide</a>
+    <a href="/math/multiply">multiply</a>
+    <a href="/math/subtract">subtract</a>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form action="<%= title %>" method="get">
+      <input type="number" name="num1" /> <%= symbol %> 
+      <input type="number" name="num2" />
+      <br>
+      <button type="submit">submit</button>
+    </form>
+    <%if (result || (typeof result === 'number' && !isNaN(result))) { %>
+      <%= num1 %> <%= symbol %> <%= num2 %> = <%= result %>
+    <% } %>
+
+
+  </body>
+</html>

@@ -1,0 +1,4 @@
+1. install dependancies
+npm install
+2. start app
+npm start
